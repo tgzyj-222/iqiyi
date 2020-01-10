@@ -1,0 +1,371 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/index.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../sass/index.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../sass/index.scss */
+#top {
+  height: 32px;
+  width: 100%;
+  background: #ccc;
+}
+
+/* line 19, ../sass/index.scss */
+#header {
+  width: 100%;
+  height: 97px;
+  background: palegreen;
+}
+
+/* line 26, ../sass/index.scss */
+#nav {
+  width: 100%;
+  height: 40px;
+  background: #EE394B;
+}
+/* line 30, ../sass/index.scss */
+#nav .nav_list {
+  width: 1200px;
+  margin: auto;
+}
+/* line 33, ../sass/index.scss */
+#nav .nav_list li {
+  float: left;
+  height: 40px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+/* line 38, ../sass/index.scss */
+#nav .nav_list li a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 44, ../sass/index.scss */
+#nav .nav_list li:hover {
+  border-bottom: 2px solid orange;
+}
+
+/* line 51, ../sass/index.scss */
+#banner {
+  width: 100%;
+  height: 400px;
+  background: green;
+}
+
+/* line 58, ../sass/index.scss */
+#gg {
+  width: 100%;
+  height: 120px;
+  margin: 40px 0 0;
+}
+/* line 62, ../sass/index.scss */
+#gg .gg_show {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 66, ../sass/index.scss */
+#gg .gg_show img {
+  margin: 0 auto;
+}
+
+/* line 73, ../sass/index.scss */
+#product {
+  width: 1200px;
+  height: 605px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  background: yellow;
+}
+/* line 79, ../sass/index.scss */
+#product #new {
+  height: 45px;
+}
+/* line 81, ../sass/index.scss */
+#product #new .new_right {
+  width: 60px;
+  height: 36px;
+  float: right;
+}
+/* line 85, ../sass/index.scss */
+#product #new .new_right a {
+  color: #666;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+/* line 92, ../sass/index.scss */
+#product #product_list {
+  width: 1200px;
+  height: 560px;
+  background: papayawhip;
+}
+
+/* line 100, ../sass/index.scss */
+.new_left {
+  width: 1140px;
+  height: 36px;
+  float: left;
+}
+/* line 104, ../sass/index.scss */
+.new_left .span1 {
+  width: 36px;
+  height: 36px;
+}
+/* line 108, ../sass/index.scss */
+.new_left .sapn2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 10px;
+}
+/* line 113, ../sass/index.scss */
+.new_left .sapn3 {
+  color: #c2c2c2;
+  margin: 0 0 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-left: 1px solid #c2c2c2;
+}
+
+/* line 123, ../sass/index.scss */
+#shop {
+  width: 1200px;
+  height: 1500px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  background: plum;
+}
+/* line 129, ../sass/index.scss */
+#shop #show_title {
+  height: 45px;
+}
+/* line 132, ../sass/index.scss */
+#shop #show_left {
+  width: 840px;
+  height: 1455px;
+  background: royalblue;
+  float: left;
+}
+/* line 138, ../sass/index.scss */
+#shop #show_right {
+  float: right;
+  width: 340px;
+  height: 1000px;
+  background: sandybrown;
+}
+
+/* line 147, ../sass/index.scss */
+#main {
+  width: 1200px;
+  height: 332px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  background: sienna;
+}
+
+/* line 156, ../sass/index.scss */
+#gg2 {
+  width: 100%;
+  height: 120px;
+  margin: 40px 0 0;
+}
+/* line 160, ../sass/index.scss */
+#gg2 .gg2_show {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+/* line 168, ../sass/index.scss */
+footer {
+  margin-top: 40px;
+}
+/* line 170, ../sass/index.scss */
+footer .footer_top {
+  width: 100%;
+  height: 495px;
+  background: #FAFAFA;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* line 179, ../sass/index.scss */
+footer .footer_bottom {
+  width: 100%;
+  height: 240px;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 36px;
+  position: relative;
+  background: #f5f5f5;
+}
+/* line 187, ../sass/index.scss */
+footer .footer_bottom .footer_t {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+/* line 192, ../sass/index.scss */
+footer .footer_bottom .footer_t ul {
+  color: #333;
+  height: 57px;
+}
+/* line 195, ../sass/index.scss */
+footer .footer_bottom .footer_t ul li {
+  float: left;
+  height: 56px;
+  margin-right: 55px;
+}
+/* line 199, ../sass/index.scss */
+footer .footer_bottom .footer_t ul li .mb10 {
+  margin-bottom: 10px;
+}
+/* line 201, ../sass/index.scss */
+footer .footer_bottom .footer_t ul li .mb10 a {
+  color: #777;
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  line-height: 28px;
+}
+/* line 208, ../sass/index.scss */
+footer .footer_bottom .footer_t ul li .mb10 a:hover {
+  color: #EE394B;
+}
+/* line 214, ../sass/index.scss */
+footer .footer_bottom .footer_t .list_zs {
+  width: 1200px;
+  height: 28px;
+  margin: 8px auto;
+  display: block;
+}
+/* line 219, ../sass/index.scss */
+footer .footer_bottom .footer_t .list_zs li {
+  margin: 0 55px 0 0;
+  float: left;
+  height: 100%;
+}
+/* line 223, ../sass/index.scss */
+footer .footer_bottom .footer_t .list_zs li a {
+  display: inline-block;
+  height: 16px;
+  font-size: 12px;
+  color: #777;
+}
+/* line 229, ../sass/index.scss */
+footer .footer_bottom .footer_t .list_zs li a:hover {
+  color: red;
+}
+/* line 235, ../sass/index.scss */
+footer .footer_bottom .nav_help {
+  width: 100%;
+}
+/* line 237, ../sass/index.scss */
+footer .footer_bottom .nav_help .nav-list {
+  width: 1200px;
+  height: 33px;
+  padding: 5px 0 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 244, ../sass/index.scss */
+footer .footer_bottom .nav_help .nav-list li {
+  float: left;
+  text-align: center;
+}
+/* line 247, ../sass/index.scss */
+footer .footer_bottom .nav_help .nav-list li a {
+  padding: 0 10px;
+  line-height: 33px;
+  color: #333;
+  border-right: 1px solid #333;
+}
+/* line 256, ../sass/index.scss */
+footer .footer_bottom .jubao {
+  width: 100%;
+  height: 28px;
+  padding: 5px 0;
+  text-align: center;
+}
+/* line 261, ../sass/index.scss */
+footer .footer_bottom .jubao a {
+  font-size: 12px;
+}
+/* line 263, ../sass/index.scss */
+footer .footer_bottom .jubao a span {
+  margin: 0 0 0 30px;
+  color: #666;
+}
