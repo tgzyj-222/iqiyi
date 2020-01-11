@@ -9,19 +9,9 @@ a {
 }
 
 // 顶部
-#top {
-    height: 32px;
-    width: 100%;
-    background: #ccc;
-}
-
+@import "_top";
 // 头部
-#header {
-    width: 100%;
-    height: 97px;
-    background: palegreen;
-}
-
+@import "_header";
 // 导航
 #nav {
     width: 100%;
@@ -48,12 +38,7 @@ a {
 }
 
 // 轮播图
-#banner {
-    width: 100%;
-    height: 400px;
-    background: green;
-}
-
+@import "_banner";
 // 广告
 #gg {
     width: 100%;
@@ -70,88 +55,11 @@ a {
 }
 
 // product
-#product {
-    width: 1200px;
-    height: 605px;
-    margin: 0 auto;
-    padding: 25px 0 0;
-    background: yellow;
-    #new {
-        height: 45px;
-        .new_right {
-            width: 60px;
-            height: 36px;
-            float: right;
-            a {
-                color: #666;
-                margin: 0 10px 0 0;
-                font-size: 14px;
-            }
-        }
-    }
-    #product_list {
-        width: 1200px;
-        height: 560px;
-        background: papayawhip;
-    }
-}
-
-//  全局
-.new_left {
-    width: 1140px;
-    height: 36px;
-    float: left;
-    .span1 {
-        width: 36px;
-        height: 36px;
-    }
-    .sapn2 {
-        font-size: 28px;
-        color: #333;
-        margin: 0 10px;
-    }
-    .sapn3 {
-        color: #c2c2c2;
-        margin: 0 0 4px;
-        padding: 0 10px;
-        font-size: 16px;
-        border-left: 1px solid #c2c2c2;
-    }
-}
-
+@import "_product";
 // 今日特卖
-#shop {
-    width: 1200px;
-    height: 1500px;
-    margin: 0 auto;
-    padding: 25px 0 0;
-    background: plum;
-    #show_title {
-        height: 45px;
-    }
-    #show_left {
-        width: 840px;
-        height: 1455px;
-        background: royalblue;
-        float: left;
-    }
-    #show_right {
-        float: right;
-        width: 340px;
-        height: 1000px;
-        background: sandybrown;
-    }
-}
-
+@import "_shop";
 // 品牌精选
-#main {
-    width: 1200px;
-    height: 332px;
-    margin: 0 auto;
-    padding: 25px 0 0;
-    background: sienna;
-}
-
+@import "_main";
 // 广告2
 #gg2 {
     width: 100%;
@@ -165,106 +73,4 @@ a {
 }
 
 // 底部
-footer {
-    margin-top: 40px;
-    .footer_top {
-        width: 100%;
-        height: 495px;
-        background: #FAFAFA;
-        border-top: 1px solid #e5e5e5;
-        border-bottom: 1px solid #e5e5e5;
-        overflow: hidden;
-        box-sizing: border-box;
-    }
-    .footer_bottom {
-        width: 100%;
-        height: 240px;
-        font-size: 12px;
-        margin: 0;
-        padding-bottom: 36px;
-        position: relative;
-        background: #f5f5f5;
-        .footer_t {
-            width: 1200px;
-            margin: 0 auto;
-            padding: 20px 0 0 0;
-            // height: 105px;
-            ul {
-                color: #333;
-                height: 57px;
-                li {
-                    float: left;
-                    height: 56px;
-                    margin-right: 55px;
-                    .mb10 {
-                        margin-bottom: 10px;
-                        a {
-                            color: #777;
-                            font-size: 12px;
-                            display: inline-block;
-                            height: 16px;
-                            line-height: 28px;
-                        }
-                        a:hover {
-                            color: #EE394B;
-                        }
-                    }
-                }
-            }
-            .list_zs {
-                width: 1200px;
-                height: 28px;
-                margin: 8px auto;
-                display: block;
-                li {
-                    margin: 0 55px 0 0;
-                    float: left;
-                    height: 100%;
-                    a {
-                        display: inline-block;
-                        height: 16px;
-                        font-size: 12px;
-                        color: #777;
-                    }
-                    a:hover {
-                        color: red;
-                    }
-                }
-            }
-        }
-        .nav_help {
-            width: 100%;
-            .nav-list {
-                width: 1200px;
-                height: 33px;
-                padding: 5px 0 10px;
-                display: block;
-                margin: 0 auto;
-                text-align: center;
-                li {
-                    float: left;
-                    text-align: center;
-                    a {
-                        padding: 0 10px;
-                        line-height: 33px;
-                        color: #333;
-                        border-right: 1px solid #333;
-                    }
-                }
-            }
-        }
-        .jubao {
-            width: 100%;
-            height: 28px;
-            padding: 5px 0;
-            text-align: center;
-            a {
-                font-size: 12px;
-                span {
-                    margin: 0 0 0 30px;
-                    color: #666;
-                }
-            }
-        }
-    }
-}
+@import "_footer";
