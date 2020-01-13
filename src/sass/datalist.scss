@@ -1,0 +1,142 @@
+    @import "compass/reset";
+    a {
+        text-decoration: none;
+    }
+    
+    // 顶部
+    @import "_top";
+    // 头部
+    @import "_header";
+    // 导航
+    #nav {
+        width: 100%;
+        height: 40px;
+        background: #EE394B;
+        .nav_list {
+            width: 1200px;
+            margin: auto;
+            li {
+                float: left;
+                height: 40px;
+                padding: 0 25px;
+                box-sizing: border-box;
+                a {
+                    color: #ffffff;
+                    font-size: 16px;
+                    line-height: 40px;
+                }
+            }
+            li:hover {
+                border-bottom: 2px solid orange;
+            }
+        }
+    }
+    
+    #main {
+        width: 1200px;
+        height: 606px;
+        background: oldlace;
+        margin: 0 auto;
+        position: relative;
+        .pd_title {
+            height: 50px;
+            width: 100%;
+            background: powderblue;
+            line-height: 50px;
+            a {
+                font-size: 13px;
+                color: #333;
+            }
+            .pd_tit {
+                width: 600px;
+                background: red;
+                display: inline-block;
+            }
+        }
+        .pd_text {
+            width: 1200px;
+            height: 536px;
+            background: purple;
+            float: left;
+            position: relative;
+            .b_img {
+                width: 420px;
+                height: 420px;
+                box-sizing: border-box;
+                border: 1px solid #e5e5e5;
+                img {
+                    width: 100%;
+                }
+            }
+            .b_fimg {
+                width: 420px;
+                height: 420px;
+                float: left;
+                background: lawngreen;
+                position: absolute;
+                top: 0;
+                left: 420px;
+                margin-left: 10px;
+                display: none;
+            }
+            .items {
+                position: relative;
+                width: 420px;
+                height: 60px;
+                margin-top: 13px;
+                .pd_item {
+                    float: left;
+                    overflow: hidden;
+                    // width: 380px;
+                    height: 60px;
+                    margin-left: 20px;
+                    li {
+                        float: left;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        box-sizing: border-box;
+                        border: 1px solid #e5e5e5;
+                        padding: 1px;
+                        margin-right: 20px;
+                        img {
+                            width: 56px;
+                            height: 56px;
+                            padding: 1px;
+                            border: 1px solid #e7e7e7;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .pd_data {
+            width: 759px;
+            height: 396px;
+            margin-left: 20px;
+            background: lightcoral;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            h3 {
+                overflow: hidden;
+                color: #333;
+                font-size: 18px;
+                width: 100%;
+                font-weight: bold;
+            }
+            .pd_price {
+                width: 100%;
+                height: 85px;
+                padding: 15px 20px;
+                line-height: 50px;
+                span {
+                    font-size: 12px;
+                    em {
+                        font-size: 30px;
+                        color: #EE394B;
+                    }
+                }
+            }
+        }
+    }

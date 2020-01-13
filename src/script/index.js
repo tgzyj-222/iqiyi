@@ -1,21 +1,21 @@
-;
-(function() {
+class Render {
+    constructor() {
+        this.context = document.querySelector('.context');
 
-    class render {
-        constructor() {
-            this.context = $('.context');
-        }
-        init() {
-            $ajax({
-                url: 'http://localhost/iqiyi1/php/',
-                dataType: 'json'
-            }).then((data) => {
-                let strhtml = '<ul class="product_item">';
-                for (let value of data) {
-                    strhtml += `
+    }
+    init() {
+        $.ajax({
+            url: 'http://localhost/iqiyi1/php/index1.php',
+
+            dataType: 'json',
+
+        }).done((data) => {
+            let strhtml = '<ul class="product_item">';
+            for (let value of data) {
+                strhtml += `
                         <li class="col">
                             <div class="productinfo">
-                                <a href="datalist.html?id=${value.id}"> 
+                                <a href="datails.html?id=${value.id}"> 
                                     <img src="${value.picurl}">
                                 </a>
                                 <div class="product_tcho">
@@ -32,13 +32,76 @@
                             </div>
                         </li>
                     `;
+            }
+            strhtml += '</ul>';
+            this.context.innerHTML = strhtml;
+        });
+    }
+}
+
+
+class Denglu {
+    constructor() {
+        var a = document.querySelector('#a');
+        var mask = document.querySelector('#mask');
+        var login = document.querySelector('#login');
+        var span = document.querySelector('#span');
+        var title = document.querySelector('#title');
+    }
+    init() {
+        a.onclick = window.onresize = function() {
+            mask.style.display = 'block';
+            login.style.display = 'block';
+            login.style.left = (document.documentElement.clientWidth - login.offsetWidth) / 2 + 'px';
+            login.style.top = (document.documentElement.clientHeight - login.offsetHeight) / 2 + 'px';
+        }
+        span.onclick = function() {
+            mask.style.display = 'none';
+            login.style.display = 'none';
+        }
+        title.onmousedown = function(ev) {
+            var ev = ev || window.event;
+            var shortx = ev.offsetX;
+            var shorty = ev.offsetY;
+            document.onmousemove = function(ev) {
+                var ev = ev || window.event;
+                var l = ev.clientX - shortx;
+                var t = ev.clientY - shorty;
+
+                //限定范围
+                if (l < 0) {
+                    l = 0;
+                } else if (l >= document.documentElement.clientWidth - login.offsetWidth) {
+                    l = document.documentElement.clientWidth - login.offsetWidth
                 }
-                strhtml += '</ul>';
-                this.context.innerHTML = strhtml;
-            });
+
+
+                //限定范围
+                if (t < 0) {
+                    t = 0;
+                } else if (t >= document.documentElement.clientHeight - login.offsetHeight) {
+                    t = document.documentElement.clientHeight - login.offsetHeight
+                }
+
+                login.style.left = l + 'px';
+                login.style.top = t + 'px';
+            };
+            document.onmouseup = function() {
+                document.onmousemove = null;
+                document.onmouseup = null;
+            };
+            return false;
+
         }
     }
 
-    new render().init();
+}
 
-})();
+define([], function() {
+    return {
+        init: function() {
+            new Render().init();
+            new Denglu().init();
+        }
+    }
+});

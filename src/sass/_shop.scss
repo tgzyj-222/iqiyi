@@ -6,6 +6,27 @@
     padding: 25px 0 0;
     #show_title {
         height: 45px;
+        .new_left {
+            width: 1200px;
+            height: 36px;
+            // float: left;
+            .span1 {
+                width: 36px;
+                height: 36px;
+            }
+            .sapn2 {
+                font-size: 28px;
+                color: #333;
+                margin: 0 10px;
+            }
+            .sapn3 {
+                color: #c2c2c2;
+                margin: 0 0 4px;
+                padding: 0 10px;
+                font-size: 16px;
+                border-left: 1px solid #c2c2c2;
+            }
+        }
     }
     #show_left {
         width: 840px;

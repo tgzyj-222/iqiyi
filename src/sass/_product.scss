@@ -18,6 +18,7 @@
             .span1 {
                 width: 36px;
                 height: 36px;
+                background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
             }
             .sapn2 {
                 font-size: 28px;
@@ -73,11 +74,16 @@
                         width: 239px;
                         // height: 155px;
                         text-align: center;
+                        overflow: hidden;
                         img {
                             width: 140px;
                             height: 140px;
                             vertical-align: middle;
                             margin-top: 15px;
+                            transition: all 500ms ease;
+                        }
+                        img:hover {
+                            transform: scale(1.1, 1.1);
                         }
                     }
                     .product_tcho {

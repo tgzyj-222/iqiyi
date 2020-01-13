@@ -98,15 +98,91 @@ a {
   margin: 0 20px 0 0;
 }
 /* line 18, ../sass/_top.scss */
-#top .top_nav ._navleft span:hover {
+#top .top_nav ._navleft #mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+  display: none;
+  z-index: 9999999;
+}
+/* line 29, ../sass/_top.scss */
+#top .top_nav ._navleft #login {
+  width: 460px;
+  height: 420px;
+  border: 1px solid black;
+  display: none;
+  position: absolute;
+  /* left: 50%; */
+  /* top: 0; */
+  z-index: 99999999999;
+  background: white;
+}
+/* line 39, ../sass/_top.scss */
+#top .top_nav ._navleft #login #title {
+  width: 100%;
+  height: 40px;
+  background: #fff url(https://www.iqiyipic.com/common/fix/v3-login/login-logo.png) no-repeat;
+}
+/* line 43, ../sass/_top.scss */
+#top .top_nav ._navleft #login #title #span {
+  width: 20px;
+  height: 40px;
+  float: right;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0 10px 5px 0;
+  line-height: 40px;
+}
+/* line 53, ../sass/_top.scss */
+#top .top_nav ._navleft #login form {
+  width: 350px;
+  margin: 0 auto;
+  padding: 50px 20px 100px;
+  text-align: center;
+}
+/* line 58, ../sass/_top.scss */
+#top .top_nav ._navleft #login form legend {
+  border: none;
+  font-size: 18px;
+}
+/* line 63, ../sass/_top.scss */
+#top .top_nav ._navleft #login form p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* line 67, ../sass/_top.scss */
+#top .top_nav ._navleft #login form input {
+  width: 200px;
+  height: 30px;
+  outline: none;
+}
+/* line 72, ../sass/_top.scss */
+#top .top_nav ._navleft #login form .btn_login {
+  background: #bcdd98;
+}
+/* line 75, ../sass/_top.scss */
+#top .top_nav ._navleft #login form .xieyi {
+  font-size: 13px;
+  color: #666;
+}
+/* line 78, ../sass/_top.scss */
+#top .top_nav ._navleft #login form .xieyi span {
+  color: #5aa700;
+}
+/* line 83, ../sass/_top.scss */
+#top .top_nav ._navleft #login span:hover {
   color: red;
 }
-/* line 22, ../sass/_top.scss */
-#top .top_nav ._navright {
+/* line 87, ../sass/_top.scss */
+#top .top_nav ._navleft ._navright {
   float: right;
 }
-/* line 24, ../sass/_top.scss */
-#top .top_nav ._navright span {
+/* line 89, ../sass/_top.scss */
+#top .top_nav ._navleft ._navright span {
   margin: 0 0 0 20px;
 }
 
@@ -212,19 +288,21 @@ a {
 }
 /* line 89, ../sass/_header.scss */
 #header .header_main .header_right ul li a {
+  width: 50px;
+  height: 50px;
   float: left;
 }
-/* line 91, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 #header .header_main .header_right ul li a img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-/* line 97, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 #header .header_main .header_right ul li p {
   float: left;
 }
-/* line 100, ../sass/_header.scss */
+/* line 102, ../sass/_header.scss */
 #header .header_main .header_right ul li p b {
   width: 100px;
   height: 20px;
@@ -233,7 +311,7 @@ a {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 108, ../sass/_header.scss */
+/* line 110, ../sass/_header.scss */
 #header .header_main .header_right ul li p span {
   display: inline-block;
   width: 100px;
@@ -242,7 +320,7 @@ a {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 120, ../sass/_header.scss */
+/* line 122, ../sass/_header.scss */
 #header .header_main .arrow {
   float: right;
   margin: -19px 0 0 10px;
@@ -388,14 +466,15 @@ a {
 #product #new .new_left .span1 {
   width: 36px;
   height: 36px;
+  background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
 }
-/* line 22, ../sass/_product.scss */
+/* line 23, ../sass/_product.scss */
 #product #new .new_left .sapn2 {
   font-size: 28px;
   color: #333;
   margin: 0 10px;
 }
-/* line 27, ../sass/_product.scss */
+/* line 28, ../sass/_product.scss */
 #product #new .new_left .sapn3 {
   color: #c2c2c2;
   margin: 0 0 4px;
@@ -403,24 +482,24 @@ a {
   font-size: 16px;
   border-left: 1px solid #c2c2c2;
 }
-/* line 35, ../sass/_product.scss */
+/* line 36, ../sass/_product.scss */
 #product #new .new_right {
   width: 60px;
   height: 36px;
   float: right;
 }
-/* line 39, ../sass/_product.scss */
+/* line 40, ../sass/_product.scss */
 #product #new .new_right a {
   color: #666;
   margin: 0 10px 0 0;
   font-size: 14px;
 }
-/* line 46, ../sass/_product.scss */
+/* line 47, ../sass/_product.scss */
 #product #product_list {
   width: 1200px;
   height: 515px;
 }
-/* line 50, ../sass/_product.scss */
+/* line 51, ../sass/_product.scss */
 #product #product_list .product_item {
   width: 100%;
   height: 100%;
@@ -429,7 +508,7 @@ a {
   border-right: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 57, ../sass/_product.scss */
+/* line 58, ../sass/_product.scss */
 #product #product_list .product_item .col {
   width: 239px;
   display: block;
@@ -438,27 +517,33 @@ a {
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
 }
-/* line 65, ../sass/_product.scss */
+/* line 66, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo {
   width: 239px;
   display: block;
   position: relative;
   cursor: pointer;
 }
-/* line 71, ../sass/_product.scss */
+/* line 72, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo a {
   display: block;
   width: 239px;
   text-align: center;
+  overflow: hidden;
 }
-/* line 76, ../sass/_product.scss */
+/* line 78, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo a img {
   width: 140px;
   height: 140px;
   vertical-align: middle;
   margin-top: 15px;
+  transition: all 500ms ease;
 }
-/* line 83, ../sass/_product.scss */
+/* line 85, ../sass/_product.scss */
+#product #product_list .product_item .col .productinfo a img:hover {
+  transform: scale(1.1, 1.1);
+}
+/* line 89, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho {
   cursor: pointer;
   height: 86px;
@@ -467,24 +552,24 @@ a {
   margin-left: 14px;
   margin-right: 14px;
 }
-/* line 90, ../sass/_product.scss */
+/* line 96, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho p {
   display: block;
 }
-/* line 97, ../sass/_product.scss */
+/* line 103, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .producttitle {
   font-size: 14px;
   line-height: 22px;
   height: 22px;
 }
-/* line 102, ../sass/_product.scss */
+/* line 108, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .subtitle {
   font-size: 12px;
   color: #999;
   line-height: 20px;
   height: 20px;
 }
-/* line 107, ../sass/_product.scss */
+/* line 113, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .subtitle .tospan1 {
   margin-right: 5px;
   display: inline-block;
@@ -498,7 +583,7 @@ a {
   border-radius: 3px;
   padding-right: 3px;
 }
-/* line 119, ../sass/_product.scss */
+/* line 125, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .subtitle .tospan1 em {
   display: inline-block;
   margin-left: 10px;
@@ -513,24 +598,24 @@ a {
   overflow: hidden;
   vertical-align: bottom;
 }
-/* line 134, ../sass/_product.scss */
+/* line 140, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .subtitle .tospan2 {
   color: #999;
   height: 16px;
   width: 98px;
   text-align: center;
 }
-/* line 141, ../sass/_product.scss */
+/* line 147, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .productdesc {
   height: 44px;
   line-height: 44px;
 }
-/* line 144, ../sass/_product.scss */
+/* line 150, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .productdesc .tospan3 {
   font-size: 20px;
   color: #ee394b;
 }
-/* line 148, ../sass/_product.scss */
+/* line 154, ../sass/_product.scss */
 #product #product_list .product_item .col .productinfo .product_tcho .productdesc .tospan4 {
   font-size: 12px;
   color: #999;
@@ -548,12 +633,36 @@ a {
 #shop #show_title {
   height: 45px;
 }
-/* line 10, ../sass/_shop.scss */
+/* line 9, ../sass/_shop.scss */
+#shop #show_title .new_left {
+  width: 1200px;
+  height: 36px;
+}
+/* line 13, ../sass/_shop.scss */
+#shop #show_title .new_left .span1 {
+  width: 36px;
+  height: 36px;
+}
+/* line 17, ../sass/_shop.scss */
+#shop #show_title .new_left .sapn2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 10px;
+}
+/* line 22, ../sass/_shop.scss */
+#shop #show_title .new_left .sapn3 {
+  color: #c2c2c2;
+  margin: 0 0 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-left: 1px solid #c2c2c2;
+}
+/* line 31, ../sass/_shop.scss */
 #shop #show_left {
   width: 840px;
   float: left;
 }
-/* line 14, ../sass/_shop.scss */
+/* line 35, ../sass/_shop.scss */
 #shop #show_left .shop_list .shop_ti {
   width: 100%;
   border: 1px solid #e5e5e5;
@@ -562,12 +671,12 @@ a {
   display: block;
   box-sizing: border-box;
 }
-/* line 22, ../sass/_shop.scss */
+/* line 43, ../sass/_shop.scss */
 #shop #show_left .shop_list .list_title {
   width: 258px;
   float: left;
 }
-/* line 25, ../sass/_shop.scss */
+/* line 46, ../sass/_shop.scss */
 #shop #show_left .shop_list .list_title .p1 {
   width: 240px;
   height: 24px;
@@ -576,11 +685,11 @@ a {
   text-align: center;
   margin: 117px auto 0;
 }
-/* line 32, ../sass/_shop.scss */
+/* line 53, ../sass/_shop.scss */
 #shop #show_left .shop_list .list_title .p1 a {
   color: #333;
 }
-/* line 36, ../sass/_shop.scss */
+/* line 57, ../sass/_shop.scss */
 #shop #show_left .shop_list .list_title .p2 {
   text-align: center;
   font-size: 18px;
@@ -589,48 +698,48 @@ a {
   height: 14px;
   padding: 0 10px;
 }
-/* line 43, ../sass/_shop.scss */
+/* line 64, ../sass/_shop.scss */
 #shop #show_left .shop_list .list_title .p2 a {
   color: #777;
 }
-/* line 46, ../sass/_shop.scss */
+/* line 67, ../sass/_shop.scss */
 #shop #show_left .shop_list .list_title .p2 a:hover {
   color: red;
 }
-/* line 51, ../sass/_shop.scss */
+/* line 72, ../sass/_shop.scss */
 #shop #show_left .shop_list .shop_img {
   width: 580px;
   height: 100%;
   float: left;
 }
-/* line 55, ../sass/_shop.scss */
+/* line 76, ../sass/_shop.scss */
 #shop #show_left .shop_list .shop_img img {
   width: 100%;
   transition: opacity 500ms ease-out;
 }
-/* line 61, ../sass/_shop.scss */
+/* line 82, ../sass/_shop.scss */
 #shop #show_left li:hover img {
   opacity: 0.6;
 }
-/* line 65, ../sass/_shop.scss */
+/* line 86, ../sass/_shop.scss */
 #shop #show_right {
   float: right;
   width: 340px;
   margin-bottom: 20px;
 }
-/* line 71, ../sass/_shop.scss */
+/* line 92, ../sass/_shop.scss */
 #shop #show_right .hot_list {
   width: 100%;
   background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png) no-repeat;
   height: 50px;
   line-height: 50px;
 }
-/* line 76, ../sass/_shop.scss */
+/* line 97, ../sass/_shop.scss */
 #shop #show_right .hot_list h1 {
   font-size: 21px;
   color: #333;
 }
-/* line 82, ../sass/_shop.scss */
+/* line 103, ../sass/_shop.scss */
 #shop .hotlist {
   width: 100%;
   background: #fff;
@@ -638,34 +747,34 @@ a {
   border-top: 0;
   box-sizing: border-box;
 }
-/* line 88, ../sass/_shop.scss */
+/* line 109, ../sass/_shop.scss */
 #shop .hotlist li {
   width: 100%;
   height: 110px;
 }
-/* line 91, ../sass/_shop.scss */
+/* line 112, ../sass/_shop.scss */
 #shop .hotlist li .list_img {
   width: 130px;
   height: 110px;
   float: left;
   overflow: hidden;
 }
-/* line 96, ../sass/_shop.scss */
+/* line 117, ../sass/_shop.scss */
 #shop .hotlist li .list_img a {
   color: #777;
 }
-/* line 98, ../sass/_shop.scss */
+/* line 119, ../sass/_shop.scss */
 #shop .hotlist li .list_img a img {
   width: 90px;
   height: 90px;
   margin: 10px;
   transition: all 500ms ease;
 }
-/* line 104, ../sass/_shop.scss */
+/* line 125, ../sass/_shop.scss */
 #shop .hotlist li .list_img a img:hover {
   transform: scale(1.1, 1.1);
 }
-/* line 109, ../sass/_shop.scss */
+/* line 130, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo {
   float: left;
   border-bottom: 1px solid #e5e5e5;
@@ -674,7 +783,7 @@ a {
   height: 110px;
   width: 200px;
 }
-/* line 116, ../sass/_shop.scss */
+/* line 137, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo .first {
   width: 57px;
   height: 20px;
@@ -682,7 +791,7 @@ a {
   margin-bottom: 10px;
   background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat;
 }
-/* line 123, ../sass/_shop.scss */
+/* line 144, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo .shoptitle {
   width: 100%;
   font-size: 14px;
@@ -694,7 +803,7 @@ a {
   border: 1px solid #e5e5e5;
   border-bottom: none;
 }
-/* line 134, ../sass/_shop.scss */
+/* line 155, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo .shopnum {
   width: 100%;
   position: absolute;
@@ -703,7 +812,7 @@ a {
   height: 18px;
   line-height: 18px;
 }
-/* line 141, ../sass/_shop.scss */
+/* line 162, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo .shopnum .num1 {
   height: 18px;
   font-size: 18px;
@@ -711,7 +820,7 @@ a {
   display: block;
   float: left;
 }
-/* line 149, ../sass/_shop.scss */
+/* line 170, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo .shopnum .num2 {
   height: 18px;
   font-size: 12px;
@@ -719,55 +828,55 @@ a {
   float: right;
   display: block;
 }
-/* line 156, ../sass/_shop.scss */
+/* line 177, ../sass/_shop.scss */
 #shop .hotlist li .shopinfo .shopnum .num2 em {
   color: #ee394b;
   padding-left: 10px;
 }
-/* line 165, ../sass/_shop.scss */
+/* line 186, ../sass/_shop.scss */
 #shop #right_tj {
   float: right;
   width: 340px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
 }
-/* line 171, ../sass/_shop.scss */
+/* line 192, ../sass/_shop.scss */
 #shop #right_tj .hot_title {
   width: 100%;
   background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png) no-repeat;
   height: 50px;
   line-height: 50px;
 }
-/* line 176, ../sass/_shop.scss */
+/* line 197, ../sass/_shop.scss */
 #shop #right_tj .hot_title h1 {
   font-size: 21px;
   color: #333;
 }
-/* line 181, ../sass/_shop.scss */
+/* line 202, ../sass/_shop.scss */
 #shop #right_tj .hot_tj {
   width: 100%;
   background: #fff;
   border-top: 0;
   box-sizing: border-box;
 }
-/* line 187, ../sass/_shop.scss */
+/* line 208, ../sass/_shop.scss */
 #shop #right_tj .hot_tj li {
   width: 340px;
   height: 230px;
 }
-/* line 190, ../sass/_shop.scss */
+/* line 211, ../sass/_shop.scss */
 #shop #right_tj .hot_tj li .hot_img {
   width: 100%;
   height: 180px;
 }
-/* line 193, ../sass/_shop.scss */
+/* line 214, ../sass/_shop.scss */
 #shop #right_tj .hot_tj li .hot_img img {
   width: 320px;
   height: 160px;
   padding-left: 10px;
   padding-top: 10px;
 }
-/* line 201, ../sass/_shop.scss */
+/* line 222, ../sass/_shop.scss */
 #shop #right_tj .hot_tj .goodtitle {
   font-size: 14px;
   color: #333;
@@ -780,7 +889,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 213, ../sass/_shop.scss */
+/* line 234, ../sass/_shop.scss */
 #shop #right_tj .hot_tj .gooddes {
   font-size: 12px;
   color: #999;
