@@ -1,18 +1,16 @@
 class Render {
     constructor() {
-        this.context = document.querySelector('.context');
-
+        this.context = $('.context');
     }
     init() {
         $.ajax({
             url: 'http://localhost/iqiyi1/php/index1.php',
-
-            dataType: 'json',
-
+            dataType: 'json'
         }).done((data) => {
-            let strhtml = '<ul class="product_item">';
+            let $strhtml = '<ul class="product_item">';
+            console.log(data)
             for (let value of data) {
-                strhtml += `
+                $strhtml += `
                         <li class="col">
                             <div class="productinfo">
                                 <a href="datails.html?id=${value.id}"> 
@@ -33,8 +31,8 @@ class Render {
                         </li>
                     `;
             }
-            strhtml += '</ul>';
-            this.context.innerHTML = strhtml;
+            $strhtml += '</ul>';
+            this.context.html($strhtml);
         });
     }
 }
@@ -97,11 +95,30 @@ class Denglu {
 
 }
 
+//轮播
+class Banner {
+    constructor() {
+        // this.banner = $('#banner'); //大盒子
+        // this.btns = $('.btnlist li'); //小按钮
+        // this.pics = $('.piclist li'); //图片
+        // this.arrowright = $('#right'); //右
+        // this.arrowleft = $('#left'); //左
+        // this.index = 0; //存储索引。
+        // this.timer = null;
+    }
+    init() {
+
+
+    }
+
+}
+
 define([], function() {
     return {
         init: function() {
             new Render().init();
-            new Denglu().init();
+            // new Denglu().init();
+            // new Banner().init();
         }
     }
 });

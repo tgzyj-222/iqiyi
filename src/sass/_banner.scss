@@ -8,7 +8,7 @@
         position: absolute;
         left: 0px;
         top: 0;
-        width: 100%;
+        // width: 100%;
         li {
             float: left;
             img {
@@ -49,7 +49,7 @@
     #right {
         right: 10px;
     }
-    .btnlist .active {
+    .btnlist .current {
         background: cyan;
     }
 }
